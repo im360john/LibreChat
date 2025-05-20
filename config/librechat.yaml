@@ -9,14 +9,18 @@ interface:
 mcpServers:
   zapier:
     type: sse
-    url: https://mcp.zapier.com/api/mcp/a/1513561/sse  # Replace with your actual Zapier MCP endpoint
+    url: https://actions.zapier.com/mcp/sk-ak-7aEBtnMeMGSgg6qTIqe3JspoZV/sse  # Replace with your actual Zapier MCP endpoint
     headers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
 
+endpoints:
+  agents:
+    disableBuilder: true
+
 balance:
   enabled: true                # Enable token credit balances for users
-  startBalance: 20000          # Initial tokens credited upon registration
-  autoRefillEnabled: false     # Enable automatic token refills
+  startBalance: 200000          # Initial tokens credited upon registration
+  autoRefillEnabled: true     # Enable automatic token refills
   refillIntervalValue: 30      # Numerical value for refill interval
   refillIntervalUnit: "days"   # Time unit for refill interval (days, hours, etc.)
-  refillAmount: 10000          # Tokens added during each refill
+  refillAmount: 100000          # Tokens added during each refill
