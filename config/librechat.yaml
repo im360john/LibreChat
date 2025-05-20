@@ -2,7 +2,7 @@ version: 1.0.8
 cache: true
  
 interface:
-  runCode: true
+  runCode: false
   modelSelect: false
   customWelcome: "Hey {{user.name}}! Welcome to AskTreez"
 
@@ -21,8 +21,8 @@ mcpServers:
 endpoints:
   agents:
     disableBuilder: true
-    capabilities:
-      - "artifacts"
+
+      
 balance:
   enabled: true                # Enable token credit balances for users
   startBalance: 200000          # Initial tokens credited upon registration
