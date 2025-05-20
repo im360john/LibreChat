@@ -23,7 +23,7 @@ endpoints:
     disableBuilder: false
     capabilities:
       - "execute_code"
-
+      - "artifacts"
 balance:
   enabled: true                # Enable token credit balances for users
   startBalance: 200000          # Initial tokens credited upon registration
