@@ -20,9 +20,8 @@ mcpServers:
       
 endpoints:
   agents:
-    disableBuilder: false
+    disableBuilder: true
     capabilities:
-      - "execute_code"
       - "artifacts"
 balance:
   enabled: true                # Enable token credit balances for users
