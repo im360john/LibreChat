@@ -3,7 +3,7 @@ cache: true
  
 interface:
   runCode: false
-  modelSelect: false
+  modelSelect: true
   customWelcome: "Hey {{user.name}}! Welcome to AskTreez"
 
 mcpServers:
