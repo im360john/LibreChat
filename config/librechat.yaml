@@ -1,7 +1,11 @@
+version: 1.0.8
+cache: true
+ 
 interface:
   runCode: false
   modelSelect: false
   customWelcome: "Hey {{user.name}}! Welcome to AskTreez"
+
 mcpServers:
   zapier:
     type: sse
