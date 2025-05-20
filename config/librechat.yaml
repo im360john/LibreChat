@@ -12,7 +12,12 @@ mcpServers:
     url: https://actions.zapier.com/mcp/sk-ak-7aEBtnMeMGSgg6qTIqe3JspoZV/sse  # Replace with your actual Zapier MCP endpoint
     headers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
-
+  snowflake:
+    type: sse
+    url: https://api.centralmind.ai/mcp/sse?server_id=cmat824dg004m920jdzgyslpe&endpoint_key=iMtONYubJXbL5vK2vDcgzvpaHMKiEOqlCBuRZyLEC0NeAgIR0JYqDCzqKoonhXbA7QgKpx9jFXwWNCSS34AJJPJUtEsVufBmahPv
+    headers:
+      X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
+      
 endpoints:
   agents:
     disableBuilder: true
