@@ -2,7 +2,7 @@ version: 1.0.8
 cache: true
  
 interface:
-  runCode: false
+  runCode: true
   modelSelect: true
   customWelcome: "Hey {{user.name}}! Welcome to AskTreez"
 
@@ -20,7 +20,7 @@ mcpServers:
       
 endpoints:
   agents:
-    disableBuilder: true
+    disableBuilder: false
 
       
 balance:
