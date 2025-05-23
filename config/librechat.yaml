@@ -28,6 +28,7 @@ endpoints:
       - "execute_code"
       - "actions"
       - "artifacts"
+      - "file_search"
       - "ocr"
 
       
