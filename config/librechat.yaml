@@ -36,6 +36,8 @@ endpoints:
 actions:
   allowedDomains:
     - "treez.io"
+    - "onrender.com"
+    - "openai.com"
       
 balance:
   enabled: true                # Enable token credit balances for users
