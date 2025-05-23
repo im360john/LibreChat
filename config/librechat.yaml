@@ -24,6 +24,11 @@ endpoints:
     recursionLimit: 50
     maxRecursionLimit: 100
     disableBuilder: false
+    capabilities:
+      - "execute_code"
+      - "actions"
+      - "artifacts"
+      - "ocr"
 
       
 balance:
