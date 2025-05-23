@@ -3,6 +3,7 @@ cache: true
  
 interface:
   runCode: true
+  agents: true
   modelSelect: true
   customWelcome: "Hey {{user.name}}! Welcome to AskTreez"
 
@@ -25,14 +26,16 @@ endpoints:
     maxRecursionLimit: 100
     disableBuilder: false
     capabilities:
-      - "execute_code"
       - "actions"
+      - "execute_code"
       - "artifacts"
       - "tools"
       - "chain"
       - "file_search"
       - "ocr"
-
+actions:
+  allowedDomains:
+    - "treez.io"
       
 balance:
   enabled: true                # Enable token credit balances for users
