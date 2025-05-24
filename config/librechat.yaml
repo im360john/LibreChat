@@ -44,8 +44,8 @@ actions:
     - "onrender.com"
     - "openai.com"
     - "test-api.treez.io"
-    
-      
+    - "treezgateway.onrender.com"  
+
 balance:
   enabled: true                # Enable token credit balances for users
   startBalance: 200000          # Initial tokens credited upon registration
