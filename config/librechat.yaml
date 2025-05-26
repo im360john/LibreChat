@@ -18,11 +18,6 @@ mcpServers:
     url: https://api.centralmind.ai/mcp/sse?server_id=cmat824dg004m920jdzgyslpe&endpoint_key=NwQwvt84OR0Th4U3kdXyZDPrnDESv4ZeU8TLlWUQW5jSDu05KCO8jxlTtQrrkHp1t%2BkiSy01l6O6sC62Pu3Zwa7wmIECrtuKf9Qh
     headers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
-  mindsdb:
-    type: sse
-    url: http://mindsdb-aqtb.onrender.com:47337/sse
-    headers:
-      X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment      
 
       
 endpoints:
