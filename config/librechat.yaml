@@ -40,6 +40,23 @@ actions:
     - "openai.com"
     - "test-api.treez.io"
     - "treezgateway.onrender.com"  
+    
+webSearch:
+  # Search Provider Configuration
+  serperApiKey: "${SERPER_API_KEY}"
+  searchProvider: "serper" # Options: "serper", "searxng"
+ 
+  # Scraper Configuration
+  firecrawlApiKey: "${FIRECRAWL_API_KEY}"
+  scraperType: "firecrawl" # Options: "firecrawl", "serper"
+ 
+  # Reranker Configuration
+  cohereApiKey: "${COHERE_API_KEY}"
+  rerankerType: "cohere" # Options: "jina", "cohere"
+ 
+  # General Settings
+  scraperTimeout: 7500 # Timeout in milliseconds for scraper requests (default: 7500)
+  safeSearch: 0 # Options: 0 (OFF), 1 (MODERATE - default), 2 (STRICT)    
 
 balance:
   enabled: true                # Enable token credit balances for users
