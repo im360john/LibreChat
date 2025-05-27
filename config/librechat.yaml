@@ -21,7 +21,7 @@ mcpServers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
   sf:
     type: sse
-    url: https://snowflake-mcp-backend.onrender.com/mcp/09041255-cf2f-48af-94d3-efb08aa360d5/sse
+    url: https://snowflake-mcp-backend.onrender.com/mcp/00073589-51b3-4071-bc2f-875d8faf87c6/sse
     headers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
 
