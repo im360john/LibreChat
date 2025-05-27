@@ -4,6 +4,7 @@ cache: true
 interface:
   runCode: true
   agents: true
+  webSearch: true
   modelSelect: true
   customWelcome: "Hey {{user.name}}! Welcome to AskTreez"
 
