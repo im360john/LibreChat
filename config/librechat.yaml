@@ -71,8 +71,8 @@ webSearch:
 
 balance:
   enabled: true                # Enable token credit balances for users
-  startBalance: 200000          # Initial tokens credited upon registration
+  startBalance: 2000000          # Initial tokens credited upon registration
   autoRefillEnabled: true     # Enable automatic token refills
-  refillIntervalValue: 30      # Numerical value for refill interval
-  refillIntervalUnit: "days"   # Time unit for refill interval (days, hours, etc.)
-  refillAmount: 100000          # Tokens added during each refill
+  refillIntervalValue: 1      # Numerical value for refill interval
+  refillIntervalUnit: "hours"   # Time unit for refill interval (days, hours, etc.)
+  refillAmount: 1000000          # Tokens added during each refill
