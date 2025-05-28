@@ -16,12 +16,12 @@ mcpServers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
   snowflake:
     type: sse
-    url: https://api.centralmind.ai/mcp/sse?server_id=cmat824dg004m920jdzgyslpe&endpoint_key=NwQwvt84OR0Th4U3kdXyZDPrnDESv4ZeU8TLlWUQW5jSDu05KCO8jxlTtQrrkHp1t%2BkiSy01l6O6sC62Pu3Zwa7wmIECrtuKf9Qh
+    url: https://api.centralmind.ai/mcp/sse?server_id=cmat824dg004m920jdzgyslpe&endpoint_key=UVaLT0WNEPrf1uZde8rgXwvvz535JzIpSwH%2FFxrPqBZmycitOwCrR%2BqDRPs8pCZBiOCSpNQp3RwwhMupAKonf3IRbjccLd2ujROY
     headers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
   sf:
     type: sse
-    url: https://snowflake-mcp-backend.onrender.com/mcp/00073589-51b3-4071-bc2f-875d8faf87c6/sse
+    url: https://snowflake-mcp-backend.onrender.com/mcp/c9cda771-0dbf-4637-90ed-b9cf9c975098/sse
     headers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
 
