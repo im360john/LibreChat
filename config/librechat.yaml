@@ -51,6 +51,8 @@ actions:
     - "openai.com"
     - "test-api.treez.io"
     - "treezgateway.onrender.com"  
+    - "uzvlw67ks9.execute-api.us-west-2.amazonaws.com"  
+    
     
 webSearch:
   # Search Provider Configuration
