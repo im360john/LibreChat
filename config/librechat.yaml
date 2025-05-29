@@ -26,7 +26,7 @@ mcpServers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
   zapier-joey:
     type: sse
-    url: https://actions.zapier.com/mcp/sk-ak-jKPCciXi61ghik5rEnNgoyjVhj/sse  # Replace with your actual Zapier MCP endpoint
+    url: https://mcp.zapier.com/api/mcp/a/2789075/sse  # Replace with your actual Zapier MCP endpoint
     headers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
      
@@ -58,6 +58,16 @@ actions:
     - "uzvlw67ks9.execute-api.us-west-2.amazonaws.com"  
     
 speech:
+  speechTab:
+    conversationMode: true
+    advancedMode: true
+  textToSpeech:
+    engineTTS: "external"
+    voice: "alloy"
+    languageTTS: "en"
+    automaticPlayback: true
+    playbackRate: 1.0
+    cacheTTS: true
   tts:
     openai:
       apiKey: '${TTS_API_KEY}'
