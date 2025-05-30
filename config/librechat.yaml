@@ -26,7 +26,7 @@ mcpServers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
   browser:
     type: sse
-    url: https://browserbase.onrender.com:8931/sse  # Replace with your actual Zapier MCP endpoint
+    url: https://browserbase.onrender.com/sse  # Replace with your actual Zapier MCP endpoint
     headers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
      
