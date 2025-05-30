@@ -24,9 +24,9 @@ mcpServers:
     url: https://snowflake-mcp-backend.onrender.com/mcp/c9cda771-0dbf-4637-90ed-b9cf9c975098/sse
     headers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
-  zapier-joey:
+  browser:
     type: sse
-    url: https://mcp.zapier.com/api/mcp/a/2789075/sse  # Replace with your actual Zapier MCP endpoint
+    url: https://browserbase.onrender.com:8931/sse  # Replace with your actual Zapier MCP endpoint
     headers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
      
