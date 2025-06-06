@@ -29,9 +29,9 @@ mcpServers:
     url: https://browserbase.onrender.com/sse  # Replace with your actual Zapier MCP endpoint
     headers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
-  stabilityai:
+  grafana:
     type: sse
-    url: http://34.102.64.97:3020/sse  # Replace with your actual Zapier MCP endpoint
+    url: https://mcp-grafana.onrender.com/sse  # Replace with your actual Zapier MCP endpoint
     headers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
 
