@@ -39,6 +39,20 @@ mcpServers:
     url: https://mcp.intercom.com/sse  # Replace with your actual Zapier MCP endpoint
     headers:
       Authorization: "Bearer ${INTERCOM_API_TOKEN}"
+  slack:
+    type: stdio
+    command: npx
+    args:
+      - -y
+      - "@modelcontextprotocol/server-slack"
+    timeout: 30000
+    initTimeout: 10000
+    env:
+      SLACK_BOT_TOKEN: "{{SLACK_BOT_TOKEN}}"
+      SLACK_TEAM_ID: "{{SLACK_TEAM_ID}}"
+      SLACK_CHANNEL_IDS: "{{SLACK_CHANNEL_IDS}"
+    stderr: inherit
+
    
 endpoints:
   agents:
