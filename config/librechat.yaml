@@ -48,9 +48,8 @@ mcpServers:
     timeout: 30000
     initTimeout: 10000
     env:
-      SLACK_BOT_TOKEN: "{{SLACK_BOT_TOKEN}}"
-      SLACK_TEAM_ID: "{{SLACK_TEAM_ID}}"
-      SLACK_CHANNEL_IDS: "C08U95LS28N"      
+      SLACK_BOT_TOKEN: "${SLACK_BOT_TOKEN}"
+      SLACK_TEAM_ID: "${SLACK_TEAM_ID}"
     stderr: inherit
   confluence:
     type: sse
@@ -66,10 +65,10 @@ mcpServers:
     timeout: 30000
     initTimeout: 10000
     env:
-      SALESFORCE_USERNAME: "{{SALESFORCE_USERNAME}}"
-      SALESFORCE_PASSWORD: "{{SALESFORCE_PASSWORD}}"
-      SALESFORCE_TOKEN: "{{SALESFORCE_TOKEN}"
-      SALESFORCE_INSTANCE_URL: "{{SALESFORCE_INSTANCE_URL}"
+      SALESFORCE_USERNAME: "${SALESFORCE_USERNAME}"
+      SALESFORCE_PASSWORD: "${SALESFORCE_PASSWORD}"
+      SALESFORCE_TOKEN: "${SALESFORCE_TOKEN}"
+      SALESFORCE_INSTANCE_URL: "${SALESFORCE_INSTANCE_URL}"
     stderr: inherit
 
    
