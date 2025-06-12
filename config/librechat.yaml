@@ -52,7 +52,7 @@ mcpServers:
       SLACK_TEAM_ID: "{{SLACK_TEAM_ID}}"
       SLACK_CHANNEL_IDS: "{{SLACK_CHANNEL_IDS}"
     stderr: inherit
-  intercom:
+  confluence:
     type: sse
     url: https://mcp-atlassian-snhy.onrender.com/sse  # Replace with your actual Zapier MCP endpoint
     headers:
