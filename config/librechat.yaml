@@ -34,9 +34,12 @@ mcpServers:
     url: https://mcp-grafana.onrender.com/sse  # Replace with your actual Zapier MCP endpoint
     headers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
-
-
-     
+  intercom:
+    type: sse
+    url: https://mcp.intercom.com/sse  # Replace with your actual Zapier MCP endpoint
+    headers:
+      Authorization: "Bearer ${INTERCOM_API_TOKEN}"
+   
 endpoints:
   agents:
     recursionLimit: 50
