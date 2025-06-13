@@ -75,12 +75,13 @@ mcpServers:
     command: npx
     args:
       - -y
-      - "@modelcontextprotocol/server-gitlab"
+      - "@zereight/mcp-gitlab"
     timeout: 30000
     initTimeout: 10000
     env:
       GITLAB_PERSONAL_ACCESS_TOKEN: "${GITLAB_PERSONAL_ACCESS_TOKEN}"
       GITLAB_API_URL: "https://gitlab.com/api/v4"
+      GITLAB_READ_ONLY_MODE: "true"
     stderr: inherit
    
 endpoints:
