@@ -46,7 +46,7 @@ mcpServers:
       - -y
       - "@modelcontextprotocol/server-slack"
     timeout: 30000
-    initTimeout: 10000
+    initTimeout: 15000
     env:
       SLACK_BOT_TOKEN: "${SLACK_BOT_TOKEN}"
       SLACK_TEAM_ID: "${SLACK_TEAM_ID}"
@@ -70,19 +70,7 @@ mcpServers:
       SALESFORCE_TOKEN: "${SALESFORCE_TOKEN}"
       SALESFORCE_INSTANCE_URL: "${SALESFORCE_INSTANCE_URL}"
     stderr: inherit
-  gitlab:
-    type: stdio
-    command: npx
-    args:
-      - -y
-      - "@zereight/mcp-gitlab"
-    timeout: 30000
-    initTimeout: 10000
-    env:
-      GITLAB_PERSONAL_ACCESS_TOKEN: "${GITLAB_PERSONAL_ACCESS_TOKEN}"
-      GITLAB_API_URL: "https://gitlab.com/api/v4"
-      GITLAB_READ_ONLY_MODE: "true"
-    stderr: inherit
+
    
 endpoints:
   agents:
