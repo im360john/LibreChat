@@ -103,7 +103,7 @@ actions:
     - "treezgateway.onrender.com"  
     - "uzvlw67ks9.execute-api.us-west-2.amazonaws.com"  
     - "api.intercom.io"
-    - "gong.app.gong.io"
+    - "app.pendo.io"
     - "api.gong.io"
 speech:
   speechTab:
