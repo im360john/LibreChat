@@ -24,6 +24,7 @@ mcpServers:
     url: https://snowflake-mcp-backend.onrender.com/mcp/c9cda771-0dbf-4637-90ed-b9cf9c975098/sse
     headers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
+    initTimeout: 20000
   browser:
     type: sse
     url: https://browserbase.onrender.com/sse  # Replace with your actual Zapier MCP endpoint
@@ -46,7 +47,7 @@ mcpServers:
       - -y
       - "@modelcontextprotocol/server-slack"
     timeout: 30000
-    initTimeout: 15000
+    initTimeout: 20000
     env:
       SLACK_BOT_TOKEN: "${SLACK_BOT_TOKEN}"
       SLACK_TEAM_ID: "${SLACK_TEAM_ID}"
@@ -63,7 +64,7 @@ mcpServers:
       - -y
       - "@tsmztech/mcp-server-salesforce"
     timeout: 30000
-    initTimeout: 10000
+    initTimeout: 20000
     env:
       SALESFORCE_USERNAME: "${SALESFORCE_USERNAME}"
       SALESFORCE_PASSWORD: "${SALESFORCE_PASSWORD}"
@@ -73,9 +74,8 @@ mcpServers:
   gitlab:
     type: sse
     url: https://gitlab-mcp.onrender.com/sse  # Replace with your actual Zapier MCP endpoint
-    headers:
-      X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
-   
+    initTimeout: 20000
+    
 endpoints:
   agents:
     recursionLimit: 50
