@@ -75,6 +75,11 @@ mcpServers:
     type: sse
     url: https://gitlab-mcp.onrender.com/sse  # Replace with your actual Zapier MCP endpoint
     initTimeout: 20000
+  pendo:
+    type: sse
+    url: https://pendo-mcp.onrender.com/mcp/sse  # Replace with your actual Zapier MCP endpoint
+    initTimeout: 20000
+
     
 endpoints:
   agents:
