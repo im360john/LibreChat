@@ -24,7 +24,7 @@ mcpServers:
     url: https://snowflake-mcp-backend.onrender.com/mcp/c9cda771-0dbf-4637-90ed-b9cf9c975098/sse
     headers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
-    initTimeout: 20000
+    initTimeout: 40000
   browser:
     type: sse
     url: https://browserbase.onrender.com/sse  # Replace with your actual Zapier MCP endpoint
@@ -110,6 +110,8 @@ actions:
     - "api.intercom.io"
     - "app.pendo.io"
     - "api.gong.io"
+    - "gsheet-search.onrender.com"
+
 speech:
   speechTab:
     conversationMode: true
