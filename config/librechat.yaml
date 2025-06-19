@@ -79,7 +79,10 @@ mcpServers:
     type: sse
     url: https://pendo-mcp.onrender.com/mcp/sse  # Replace with your actual Zapier MCP endpoint
     initTimeout: 20000
-
+  memory:
+    type: sse
+    url: https://mcp-memory.onrender.com/mcp/v1/sse  # Replace with your actual Zapier MCP endpoint
+    initTimeout: 20000
     
 endpoints:
   agents:
