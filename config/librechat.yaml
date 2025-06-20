@@ -83,6 +83,11 @@ mcpServers:
     type: sse
     url: https://mcp-memory.onrender.com/mcp/openmemory/sse/user
     initTimeout: 20000
+  dialer:
+    type: sse
+    url: https://voice-call-mcp-server.onrender.com/events
+    initTimeout: 20000
+
     
 endpoints:
   agents:
