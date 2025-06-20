@@ -85,7 +85,7 @@ mcpServers:
     initTimeout: 20000
   dialer:
     type: sse
-    url: https://voice-call-mcp-server.onrender.com/events
+    url: https://voice-call-mcp-server.onrender.com/mcp
     initTimeout: 20000
 
     
