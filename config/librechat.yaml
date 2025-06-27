@@ -39,7 +39,7 @@ mcpServers:
      
 endpoints:
   agents:
-    recursionLimit: 50
+    recursionLimit: 100
     maxRecursionLimit: 100
     disableBuilder: false
     allowedProviders:
