@@ -14,16 +14,6 @@ mcpServers:
     url: https://actions.zapier.com/mcp/sk-ak-7aEBtnMeMGSgg6qTIqe3JspoZV/sse  # Replace with your actual Zapier MCP endpoint
     headers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
-  snowflake:
-    type: stdio
-    command: uvx
-    args:
-      - "toolfront[snowflake]"
-      - "snowflake://JOHNTREEZ:091#Xinhua@TREEZ-INB77415.snowflakecomputing.com/RETAIL_ANALYTICS/DBT_TICKET?warehouse=RETAIL_ANALYTICS"
-    timeout: 30000
-    initTimeout: 20000
-    env:
-    stderr: inherit
   sf:
     type: sse
     url: https://snowflake-mcp-backend.onrender.com/mcp/c9cda771-0dbf-4637-90ed-b9cf9c975098/sse
