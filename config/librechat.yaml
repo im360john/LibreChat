@@ -31,7 +31,7 @@ mcpServers:
     headers:
       X-User-ID: "{{LIBRECHAT_USER_ID}}"  # This enables per-user assignment
   intercom:
-    type: streamable-http
+    type: sse
     url: https://fast-intercom-mcp.onrender.com/mcp
   slack:
     type: stdio
@@ -67,18 +67,6 @@ mcpServers:
   gitlab:
     type: sse
     url: https://gitlab-mcp.onrender.com/sse  # Replace with your actual Zapier MCP endpoint
-    initTimeout: 20000
-  pendo:
-    type: sse
-    url: https://pendo-mcp.onrender.com/mcp/sse  # Replace with your actual Zapier MCP endpoint
-    initTimeout: 20000
-  memory:
-    type: sse
-    url: https://mcp-memory.onrender.com/mcp/openmemory/sse/user
-    initTimeout: 20000
-  dialer:
-    type: sse
-    url: https://voice-call-mcp-server.onrender.com/mcp
     initTimeout: 20000
 
     
